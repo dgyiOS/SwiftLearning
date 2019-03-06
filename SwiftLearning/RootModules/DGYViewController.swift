@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SnapKit
+import Kingfisher
 
 class DGYViewController: UIViewController {
 
@@ -14,8 +16,27 @@ class DGYViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+        view.backgroundColor = UIColor.white
+        if #available(iOS 11.0, *) {
+            UIScrollView.appearance().contentInsetAdjustmentBehavior = .never
+        } else {
+            automaticallyAdjustsScrollViewInsets = false
+        }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
+    func configNavigationBar() {
+        guard let navi = navigationController else { return }
+        if navi.visibleViewController == self {
+//            navi.barst
+        }
+    }
 
     
     // MARK: - Navigation

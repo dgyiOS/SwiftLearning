@@ -13,6 +13,8 @@ class DGYTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tabBar.isTranslucent = false
+        
         
     }
     

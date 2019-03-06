@@ -11,7 +11,9 @@
 @implementation TestBridge
 
 - (void)test {
-
+    
+    NSLayoutConstraint *layout;
+    
 }
 
 @end

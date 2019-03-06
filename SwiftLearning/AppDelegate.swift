@@ -7,15 +7,32 @@
 //
 
 import UIKit
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    lazy var reachability: NetworkReachabilityManager? = {
+        return NetworkReachabilityManager(host: "http://app.u17.com")
+    }()
+    
+    var orientation: UIInterfaceOrientationMask = .portrait
+    
+    //MARK: 配置基本信息
+    func configureBaseInfo() {
+        
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = UIColor.black
+        window?.rootViewController = ViewController()
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
