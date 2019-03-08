@@ -128,6 +128,7 @@
 		77146FA8221BC752000725D9 = {
 			isa = PBXGroup;
 			children = (
+				77227EDA22263F56004C9AA3 /* baseReview */,
 				77146FB3221BC752000725D9 /* SwiftLearning */,
 				77146FC8221BC755000725D9 /* SwiftLearningTests */,
 				77146FD3221BC755000725D9 /* SwiftLearningUITests */,
@@ -152,10 +153,7 @@
 			children = (
 				77146FB4221BC752000725D9 /* AppDelegate.swift */,
 				77146FB6221BC752000725D9 /* ViewController.swift */,
-				772EF22D221FF24700C22315 /* TestBasic.swift */,
 				775B2A0B2227FE2F00B9996A /* Categorys */,
-				77227EDA22263F56004C9AA3 /* FuctionClass */,
-				77227ED922263F43004C9AA3 /* OC-Bridge */,
 				77227ED022259DF5004C9AA3 /* RootModules */,
 				77146FBB221BC755000725D9 /* Assets.xcassets */,
 				77146FBD221BC755000725D9 /* LaunchScreen.storyboard */,
@@ -204,15 +202,17 @@
 			path = "OC-Bridge";
 			sourceTree = "<group>";
 		};
-		77227EDA22263F56004C9AA3 /* FuctionClass */ = {
+		77227EDA22263F56004C9AA3 /* baseReview */ = {
 			isa = PBXGroup;
 			children = (
+				772EF22D221FF24700C22315 /* TestBasic.swift */,
 				77227EDB22263F70004C9AA3 /* FuctionTool.swift */,
 				77227EDD222694B4004C9AA3 /* BibaoTool.swift */,
 				77227EDF222775CE004C9AA3 /* EnumerTool.swift */,
 				77227EE122277F3B004C9AA3 /* ClassAndStructTool.swift */,
+				77227ED922263F43004C9AA3 /* OC-Bridge */,
 			);
-			path = FuctionClass;
+			path = baseReview;
 			sourceTree = "<group>";
 		};
 		775B2A0B2227FE2F00B9996A /* Categorys */ = {
@@ -384,16 +384,28 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLearning/Pods-SwiftLearning-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -8,4 +8,10 @@ pod 'SnapKit'
 pod 'Kingfisher'
 pod 'ReachabilitySwift'
 
+pod 'Moya'
+pod 'HandyJSON'
+pod 'Then'
+pod 'MJRefresh'
+pod 'MBProgressHUD'
+
 end
